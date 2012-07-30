@@ -52,7 +52,7 @@ abstract class VenueMixin {
 	String timezone;
 	
 	@JsonProperty("beenHere")
-	Map<String,Integer> beenHere;
+	Map<String,Boolean> beenHere;
 	
 	@JsonProperty("photos")
 	PhotoGroups photos;

@@ -2,15 +2,15 @@ package org.springframework.social.foursquare.api;
 
 public class VenueHistoryItem {
 	
-	private int beenHere;
+	private Boolean beenHere;
 	private Venue venue;
 	
-	public VenueHistoryItem(int beenHere, Venue venue) {
+	public VenueHistoryItem(Boolean beenHere, Venue venue) {
 		this.beenHere = beenHere;
 		this.venue = venue;
 	}
 
-	public int getBeenHere() {
+	public Boolean getBeenHere() {
 		return beenHere;
 	}
 

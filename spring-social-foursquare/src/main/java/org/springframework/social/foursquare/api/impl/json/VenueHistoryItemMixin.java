@@ -9,6 +9,6 @@ import org.springframework.social.foursquare.api.Venue;
 abstract class VenueHistoryItemMixin {
 	@JsonCreator
 	VenueHistoryItemMixin(
-			@JsonProperty("beenHere") int beenHere,
+			@JsonProperty("beenHere") Boolean beenHere,
 			@JsonProperty("venue") Venue venue){}
 }

@@ -184,7 +184,7 @@ public class UserTemplateTest extends AbstractFoursquareApiTest {
         
         VenueHistory history = foursquare.userOperations().getVenueHistory(0, 0, null);
         assertEquals(163, history.getCount());
-        assertEquals(1, history.getItems().get(0).getBeenHere());
+        assertEquals(true, history.getItems().get(0).getBeenHere());
         assertTrue(history.getItems().get(0).getVenue() != null);
         mockServer.verify();
     }
